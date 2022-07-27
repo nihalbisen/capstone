@@ -9,7 +9,7 @@ import fabric from "../../Images/fabric.png";
 import nylon from "../../Images/nylon.png";
 import sweat from "../../Images/sweat.png";
 import breathable from "../../Images/breathable.png";
-import Rating from "../Rating/Rating";
+//import Rating from "../Rating/Rating";
 
 export default function SingleProduct(){
     const [DataProd, setDataProd] = useState([]);
@@ -64,7 +64,7 @@ export default function SingleProduct(){
                 <span className="sprod-category">{DataProd.category}</span>
                 <h3 className="product-title">{DataProd.title}</h3>
                 <span className="product-price">${DataProd.price}</span>
-                <Rating rating={DataProd.rating}/>
+                {/* <Rating rating={DataProd.rating}/> */}
                 <article className="product-description">{DataProd.description}</article>
                     <form action="/" target="">
                         <div>
