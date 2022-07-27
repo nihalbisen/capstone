@@ -1,0 +1,36 @@
+.prod-banner{
+    padding: 47px;
+}
+.prodBan-sec1>h3{
+     // typo(font-family, font-size, line-height, text-align, color)
+     @include typo("Source Serif Pro, Semibold", 48px, 60px, left, #172026);
+     margin-bottom: 8px;
+}
+.prodBan-sec1>span{
+     // typo(font-family, font-size, line-height, text-align, color)
+     @include typo("Muli, SemiBold", 20px, 25px, left, #172026);
+     margin-bottom: 8px;
+}
+.prodBan-sec1>p{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 16px, 24px, left, #172026);
+    margin-bottom: 8px;
+}
+.prodBan-sec1>button{
+    margin-right: 33.24px;
+    margin-bottom: 8px;
+}
+.coll-btn{
+    @include primary-outline-btn();
+}
+.shop-btn{
+    @include primary-btn();
+}
+.prodBan-divder{
+    @include divider(67px, 0px, 0px, 0px);
+    display: block;
+}
+.prodBan-sec2>img{
+    width: 100%;
+    height: auto;
+}

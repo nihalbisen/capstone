@@ -1,0 +1,41 @@
+.cat{
+    margin-bottom: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cat-items{
+    width: 200px;
+    height: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    cursor: pointer;
+}
+.cat-items:nth-child(1){
+    background-image: url("../Images/ShopWomen.jpg");
+}
+.cat-items:nth-child(2){
+    background-image: url("../Images/ShopMen.jpg");
+}
+.cat-items:nth-child(3){
+    background-image: url("../Images/Jewellery.jpg");
+}
+.cat-items:nth-child(4){
+    background-image: url("../Images/electronics.jpg");
+}
+.cat-details{
+    background-color: #1B252CD9;
+    padding: 17px 10px;
+    margin-top:50%;
+    @include divider2;
+}
+.cat-details > h2{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 24px, 30px, left, white);
+}
+.cat-details > span{
+    @include typo("Muli, Regular", 16px, 23px, left, white);
+    letter-spacing: 0.32px;
+}

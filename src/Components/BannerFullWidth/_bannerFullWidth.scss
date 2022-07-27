@@ -1,0 +1,27 @@
+.ban-full{
+    padding: 0 10px;
+    background-color: #1B252C;
+}
+.ban-full-sec1 > img{
+ width: 100%;
+ height: auto;
+}
+.ban-full-sec2{
+    
+    padding: 82px 24px;
+}
+.ban-full-sec2 > h2{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 48px, 60px, left, #FFFFFF);
+    margin-bottom: 16px;
+}
+.ban-full-sec2 > span{
+    display: block;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 20px, 25px, left, #FFFFFF);
+    margin-bottom: 16px;
+}
+.ban-full-sec2>button{
+    @include primary-outline-btn2();
+    margin-bottom: 16px;
+}

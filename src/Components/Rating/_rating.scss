@@ -1,0 +1,35 @@
+.stars-outer {
+    position: relative;
+    display: inline-block;
+
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before {
+    content: '\f005  \f005  \f005  \f005  \f005';
+    font-family: 'FontAwesome';
+    font-weight: 500;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.stars-inner::before {
+    content: '\f005  \f005  \f005  \f005  \f005';
+    font-size: 16px;
+    font-family: 'FontAwesome';
+    font-weight: 500;
+    color: black;
+}
+
+.number-rating {
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 14px, 24px, Right, #172026);
+}

@@ -1,0 +1,25 @@
+@import "../../Sass/common/buttons";
+.hero{
+    background: transparent url("../Images/placeholder-blank.svg");
+}
+.hero-sec1{
+    padding: 40px 100px;
+}
+.hero-sec1>h2{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 48px, 60px, left, #172026);
+    margin: 8px 0;
+}
+.hero-sec1>p{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 16px, 24px, left, #172026);
+    margin: 8px 0;
+}
+.hero-sec1>button{
+    @include primary-btn();
+    margin: 8px 0;
+}
+.hero-sec2>img{
+    width: 100%;
+    height: auto;
+}

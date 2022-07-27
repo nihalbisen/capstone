@@ -1,0 +1,97 @@
+@import "../../Sass/common/font-style";
+@import "../../Sass/common/divider"; 
+
+@mixin sec-3 ($left, $right){
+    background-color: #1B252C;
+    padding: 14px 0px;
+    margin-top: -25px;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+}
+.banner-sec1{
+    background-color: #1B252C;
+    padding: 95px 90px; 
+}
+.banner-title{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 48px, 60px, center, white);
+}
+.divider{
+    // divider(margin-top, margin-left, margin-bottom, margin-right)
+    @include divider(32px, auto, 0px, auto);
+}
+
+.banner-sec2> img{
+    width: 100%;
+    height: 320px;
+}
+//media querie
+@media screen and (max-width:328px) {
+    .banner-container {
+        display: block;
+    }
+    .banner-sec2 > img {
+        width: 100vw;
+        height: auto;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .banner-sec3 {
+        // sec-3(margin-left, margin-right)
+        @include sec-3(10px, 10px);
+    }
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .banner-container {
+        display: block;
+    }
+    .banner-sec2 > img {
+        width: 100vw;
+        height: auto;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .banner-sec3 {
+        // sec-3(margin-left, margin-right)
+        @include sec-3(15px, 15px);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .banner-sec3{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .banner-sec3{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    .banner-sec3{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width:1920px) {
+    .banner-sec3{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .banner-sec3{
+        display: none;
+    }
+}
