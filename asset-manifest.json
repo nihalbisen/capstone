@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.0bf43a64.css",
-    "main.js": "/capstone/static/js/main.cd47eb7c.js",
+    "main.css": "/capstone/static/css/main.133f7440.css",
+    "main.js": "/capstone/static/js/main.077e5e40.js",
     "static/js/55.799617e7.chunk.js": "/capstone/static/js/55.799617e7.chunk.js",
     "static/js/784.f2d50369.chunk.js": "/capstone/static/js/784.f2d50369.chunk.js",
-    "static/js/99.31aea80f.chunk.js": "/capstone/static/js/99.31aea80f.chunk.js",
+    "static/js/99.4fa0ba1b.chunk.js": "/capstone/static/js/99.4fa0ba1b.chunk.js",
     "static/js/640.40e4ad06.chunk.js": "/capstone/static/js/640.40e4ad06.chunk.js",
     "static/js/754.420fe0ea.chunk.js": "/capstone/static/js/754.420fe0ea.chunk.js",
     "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
@@ -23,17 +23,17 @@
     "static/media/shopping-bag.svg": "/capstone/static/media/shopping-bag.b0157b0263004d4fadc2e5c22ab0cf70.svg",
     "index.html": "/capstone/index.html",
     "static/media/placeholder-blank.svg": "/capstone/static/media/placeholder-blank.5cf1529c31a151df7200.svg",
-    "main.0bf43a64.css.map": "/capstone/static/css/main.0bf43a64.css.map",
-    "main.cd47eb7c.js.map": "/capstone/static/js/main.cd47eb7c.js.map",
+    "main.133f7440.css.map": "/capstone/static/css/main.133f7440.css.map",
+    "main.077e5e40.js.map": "/capstone/static/js/main.077e5e40.js.map",
     "55.799617e7.chunk.js.map": "/capstone/static/js/55.799617e7.chunk.js.map",
     "784.f2d50369.chunk.js.map": "/capstone/static/js/784.f2d50369.chunk.js.map",
-    "99.31aea80f.chunk.js.map": "/capstone/static/js/99.31aea80f.chunk.js.map",
+    "99.4fa0ba1b.chunk.js.map": "/capstone/static/js/99.4fa0ba1b.chunk.js.map",
     "640.40e4ad06.chunk.js.map": "/capstone/static/js/640.40e4ad06.chunk.js.map",
     "754.420fe0ea.chunk.js.map": "/capstone/static/js/754.420fe0ea.chunk.js.map",
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bf43a64.css",
-    "static/js/main.cd47eb7c.js"
+    "static/css/main.133f7440.css",
+    "static/js/main.077e5e40.js"
   ]
 }
