@@ -8,7 +8,7 @@ export default function Home(){
     return(
         <>
         <HeroBanner/>
-        <section className="cat aem-Grid aem-Grid--12">
+        <section className="cat aem-Grid aem-Grid--12"> 
             <div className="cat-items aem-GridColumn aem-GridColumn--default--3" onClick={() => { navigate("category/women's clothing")}}>
                 <div className="cat-details">
                     <h2>Shop Women</h2>

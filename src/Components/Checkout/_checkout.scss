@@ -1,0 +1,242 @@
+.checkout {
+    margin-top: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.check-head>h2 {
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 48px, 60px, center, #172026);
+
+}
+
+.check-head>hr {
+    // divider(margin-top, margin-left, margin-bottom, margin-right)
+    @include divider(10px, auto, 0px, auto);
+}
+.check-form{
+    margin-right: 32px;
+    margin-top: 32px;
+}
+.check-form > h3{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 30px, 36px, left, #172026);
+    margin-bottom: 20px;
+}
+.check-form > span{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 20px, 25px, left, #172026);
+    margin-bottom: 8px;
+}
+.check-form > p{
+     // typo(font-family, font-size, line-height, text-align, color)
+     @include typo("Muli, Regular", 16px, 25px, left, #172026);
+     margin-bottom: 16px;
+}
+.check-form > button{
+    display: block;
+    margin: 0 auto;
+    @include primary-outline-btn4();
+    margin-bottom: 48px;
+}
+
+
+.check-container{
+    display: flex;
+    justify-content:left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.check-items{
+    margin-right: 32px;
+}
+.check-items> label{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 16px, 24px, left, #181C24);
+    display: block;
+}
+.check-items> input{
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    width: 436px;
+    height: 44px;
+    padding: 12px;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 21px, left, #181C24);
+}
+.check-items>select{
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    width: 436px;
+    height: 44px;
+    padding: 12px;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 21px, left, #181C24);
+}
+.state-zip{
+    display: flex;
+}
+#state{
+    margin-right: 16px;
+}
+#state> label{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 16px, 24px, left, #181C24);
+    display: block;
+}
+#state > select{
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    width: 274px;
+    height: 44px;
+    padding: 12px;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 21px, left, #181C24);
+}
+#state > input{
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    width: 274px;
+    height: 44px;
+    padding: 12px;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 21px, left, #181C24);
+}
+#zip >label{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 16px, 24px, left, #181C24);
+    display: block;
+}
+#zip >img{
+    margin-left: 8px
+};
+
+#zip > input{
+    border: 2px solid #B5B7BC;
+    border-radius: 8px;
+    width: 128px;
+    height: 44px;
+    padding: 12px;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 21px, left, #181C24);
+}
+//shipping information
+.ship-info{
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+.ship-info-head{
+    display: flex;
+    justify-content: space-between;
+}
+.ship-info-head > span{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 16px, 20px, left, #172026);
+    margin-bottom: 16px;
+}
+
+.ship-info-head > button{
+    @include typo("Muli, SemiBold", 16px, 22px, left, #1363DF);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+}
+.ship-info-head > button > img{
+    height: 16px;
+    width: 16px;
+    margin-right: 6.5px;
+}
+.ship-info-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.ship-info-details > p{
+    width: 157px;
+    margin-right: 120px;
+    @include typo("Muli, Regular", 16px, 24px, left, #535965);
+}
+.ship-info-details > div{
+    width: 312px;
+    margin-right: 120px;
+}
+.ship-method{
+    margin-top: 26px;
+    margin-bottom: 42px;
+}
+.ship-method-list{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.ship-method-list > input{
+    width: 24px;
+    height: 24px;
+    border: 2px solid #1363DF;
+    margin-right: 14.5px;
+}
+.ship-method-list > label{
+    margin-right: 120px;
+    @include typo("Muli, Regular", 16px, 24px, left, #172026);
+}
+.payment-info{
+    margin-top: 26.5px;
+}
+
+.paypal{
+    border-top: 1px solid #D1D3D6;
+    border-bottom: 1px solid #D1D3D6;
+    padding: 26.5px 0;
+}
+.check-cart-products{
+    display: flex;
+    margin-bottom: 16px;
+    width: 312px;
+}
+.check-cart-products> img{
+    width: 100px;
+    height: 119px;
+    margin-right: 17px;
+}
+.check-cart-details> span{
+    display: block;
+    @include typo("Muli, Regular", 16px, 24px, left, #172026);
+}
+.check-cart-details> span:first-child{
+    @include typo("Muli, SemiBold", 16px, 24px, left, #172026);
+}
+#place-order{
+    display: block;
+    margin: 0 auto;
+    //btn-custom(background-color,border-color,width,text-color);
+    @include btn-custom(#1363DF,#1363DF,300px,white);
+    margin-bottom: 48px;
+}
+#terms{
+    text-align: center;
+}
+
+//pricing summary
+.exp-check {
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    padding: 32px;
+    margin-bottom: 16px;
+    display: flex
+}
+
+.exp-check>span {
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 20px, 25px, left, #172026);
+}
+
+.exp-check>button {
+    @include primary-outline-btn3();
+}
+

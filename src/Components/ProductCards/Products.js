@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 
 export default function Products(){
     const [initialDataCat, setDataCat] = useState([]);
-    const category = useParams().category;
+    let category = useParams().category;
+    
    
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/category/${category}`)

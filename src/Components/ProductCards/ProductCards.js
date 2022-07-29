@@ -35,14 +35,40 @@ export default function ProductCards(props) {
   }
   
   let navigate = useNavigate();
+  let itemval = [];
+  let index;
 
+  const filterProduct = (item) => {
+   
+    //find index
+    index= itemval.findIndex(rank => rank === item);
+    
+    // only try removing it, if it exists in the array
+    if (index !== -1) {
+      itemval.splice(index, 1);
+    }
+    else{
+      itemval.push(item);
+      // let filterCat = itemval.map(val => 
+      //   fetch('https://fakestoreapi.com/products')
+      //   .then(res=>res.json())
+      //   .then(json=>console.log(json.filter(function(item){
+      //     return item.category === val;         
+      // })))
+      //   );
+        // return(
+        //   {filterCat}
+        // );
+    }
+    console.log(prodData);
+  }
   
   return (
     <>
       <Banner category={props.category}/>
       <section className="aem-Grid aem-Grid--12 products-grid">
         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide aem-GridColumn--tablet--hide">
-          <Sidebar />
+          <Sidebar filterProduct={filterProduct} />
         </div>
         <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--12 aem-Grid aem-Grid--12">
           <div className="aem-GridColumn aem-GridColumn--default--6">

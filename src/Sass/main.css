@@ -6521,6 +6521,7 @@ footer {
   border: none;
   display: block;
   margin: 16px auto;
+  cursor: pointer;
 }
 
 .checkout-btn > a {
@@ -7003,5 +7004,405 @@ footer {
   text-align: center;
   color: white;
   margin-bottom: 16px;
+}
+
+.checkout {
+  margin-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.check-head > h2 {
+  font-family: "Source Serif Pro, Semibold";
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #172026;
+}
+
+.check-head > hr {
+  border: 4px solid #1F39FF;
+  width: 102px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-right: auto;
+}
+
+.check-form {
+  margin-right: 32px;
+  margin-top: 32px;
+}
+
+.check-form > h3 {
+  font-family: "Source Serif Pro, Semibold";
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+  color: #172026;
+  margin-bottom: 20px;
+}
+
+.check-form > span {
+  font-family: "Muli, SemiBold";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  color: #172026;
+  margin-bottom: 8px;
+}
+
+.check-form > p {
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  color: #172026;
+  margin-bottom: 16px;
+}
+
+.check-form > button {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #2A65D7;
+  border-radius: 10px;
+  width: 347px;
+  height: 40px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #1363DF;
+  margin-bottom: 48px;
+}
+
+.check-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.check-items {
+  margin-right: 32px;
+}
+
+.check-items > label {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #181C24;
+  display: block;
+}
+
+.check-items > input {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  width: 436px;
+  height: 44px;
+  padding: 12px;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #181C24;
+}
+
+.check-items > select {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  width: 436px;
+  height: 44px;
+  padding: 12px;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #181C24;
+}
+
+.state-zip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#state {
+  margin-right: 16px;
+}
+
+#state > label {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #181C24;
+  display: block;
+}
+
+#state > select {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  width: 274px;
+  height: 44px;
+  padding: 12px;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #181C24;
+}
+
+#state > input {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  width: 274px;
+  height: 44px;
+  padding: 12px;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #181C24;
+}
+
+#zip > label {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #181C24;
+  display: block;
+}
+
+#zip > img {
+  margin-left: 8px;
+}
+
+#zip > input {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  width: 128px;
+  height: 44px;
+  padding: 12px;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #181C24;
+}
+
+.ship-info {
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.ship-info-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ship-info-head > span {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #172026;
+  margin-bottom: 16px;
+}
+
+.ship-info-head > button {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #1363DF;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  cursor: pointer;
+}
+
+.ship-info-head > button > img {
+  height: 16px;
+  width: 16px;
+  margin-right: 6.5px;
+}
+
+.ship-info-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ship-info-details > p {
+  width: 157px;
+  margin-right: 120px;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #535965;
+}
+
+.ship-info-details > div {
+  width: 312px;
+  margin-right: 120px;
+}
+
+.ship-method {
+  margin-top: 26px;
+  margin-bottom: 42px;
+}
+
+.ship-method-list {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ship-method-list > input {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #1363DF;
+  margin-right: 14.5px;
+}
+
+.ship-method-list > label {
+  margin-right: 120px;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #172026;
+}
+
+.payment-info {
+  margin-top: 26.5px;
+}
+
+.paypal {
+  border-top: 1px solid #D1D3D6;
+  border-bottom: 1px solid #D1D3D6;
+  padding: 26.5px 0;
+}
+
+.check-cart-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  width: 312px;
+}
+
+.check-cart-products > img {
+  width: 100px;
+  height: 119px;
+  margin-right: 17px;
+}
+
+.check-cart-details > span {
+  display: block;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #172026;
+}
+
+.check-cart-details > span:first-child {
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #172026;
+}
+
+#place-order {
+  display: block;
+  margin: 0 auto;
+  background-color: #1363DF;
+  border: 2px solid #1363DF;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+  margin-bottom: 48px;
+}
+
+#terms {
+  text-align: center;
+}
+
+.exp-check {
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  padding: 32px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exp-check > span {
+  font-family: "Muli, SemiBold";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  color: #172026;
+}
+
+.exp-check > button {
+  background-color: white;
+  border: 2px solid #2A65D7;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Muli, Regular";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #1363DF;
 }
 /*# sourceMappingURL=main.css.map */

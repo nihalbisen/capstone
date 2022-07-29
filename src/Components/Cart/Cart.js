@@ -120,7 +120,7 @@ export default function Cart() {
                             <span>Estimated Shipping: FREE</span>
                             <span>Estimated Total: ${cart.cartTotalAmount}</span>
                             <div className="checkout-btn">
-                                <button>Checkout</button>
+                                <button onClick={() => { navigate("checkout") }}>Checkout</button>
                                 <a href="/" aria-label="PayPal"><img src={paypalbtn} alt="PayPal" /></a>
                             </div>
                         </div>

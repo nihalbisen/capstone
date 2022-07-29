@@ -34,3 +34,38 @@
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, Regular", 14px, 16px, center, white);
 }
+@mixin primary-outline-btn3(){
+    background-color: white;
+    border: 2px solid #2A65D7;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    opacity: 1;
+    text-transform: uppercase;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 16px, center, #1363DF);
+}
+
+@mixin primary-outline-btn4(){
+    background-color: white;
+    border: 2px solid #2A65D7;
+    border-radius: 10px;
+    width: 347px;
+    height: 40px;
+    opacity: 1;
+    text-transform: uppercase;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 16px, center, #1363DF);
+}
+
+@mixin btn-custom($background,$border-color,$width,$text-color){
+    background-color: $background;
+    border: 2px solid $border-color;
+    border-radius: 10px;
+    width: $width;
+    height: 40px;
+    opacity: 1;
+    text-transform: uppercase;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, Regular", 14px, 16px, center, $text-color);
+}

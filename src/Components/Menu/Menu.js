@@ -1,5 +1,6 @@
 import React,{Suspense,lazy} from "react";
 import {Route,HashRouter,Routes} from 'react-router-dom';
+import Checkout from "../Checkout/Checkout";
 const Home=lazy(()=>import('../Home/Home'));
 const ProductCards=lazy(()=>import('../ProductCards/Products'));
 const Cart=lazy(()=>import('../Cart/Cart'));
@@ -14,6 +15,7 @@ export default function Menu(){
               <Route path='/' element={<Home />} />
               <Route path='/' element={<Home />} />
               <Route path='cart' element={<Cart />} />
+              <Route path='cart/checkout' element={<Checkout/>} />
               {/* <Route path='product' element={<SingleProduct />} /> */}
               <Route path='category/:category' element={<ProductCards/>} />
               <Route path="category/women's%20clothing/product/:id" element={<SingleProduct/>} />
