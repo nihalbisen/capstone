@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/capstone/static/css/main.538cdcae.css",
-    "main.js": "/capstone/static/js/main.ff1988f5.js",
-    "static/js/955.0ee0ca99.chunk.js": "/capstone/static/js/955.0ee0ca99.chunk.js",
-    "static/js/245.f31fc85b.chunk.js": "/capstone/static/js/245.f31fc85b.chunk.js",
+    "main.js": "/capstone/static/js/main.4e45bf32.js",
+    "static/js/955.da995f12.chunk.js": "/capstone/static/js/955.da995f12.chunk.js",
+    "static/js/245.afbabc59.chunk.js": "/capstone/static/js/245.afbabc59.chunk.js",
     "static/js/55.799617e7.chunk.js": "/capstone/static/js/55.799617e7.chunk.js",
     "static/js/784.d428d083.chunk.js": "/capstone/static/js/784.d428d083.chunk.js",
     "static/js/99.4fa0ba1b.chunk.js": "/capstone/static/js/99.4fa0ba1b.chunk.js",
@@ -31,9 +31,9 @@
     "static/media/edit-2.svg": "/capstone/static/media/edit-2.f1553a709f4deb1bd7806b8006f7f878.svg",
     "static/media/placeholder-blank.svg": "/capstone/static/media/placeholder-blank.5cf1529c31a151df7200.svg",
     "main.538cdcae.css.map": "/capstone/static/css/main.538cdcae.css.map",
-    "main.ff1988f5.js.map": "/capstone/static/js/main.ff1988f5.js.map",
-    "955.0ee0ca99.chunk.js.map": "/capstone/static/js/955.0ee0ca99.chunk.js.map",
-    "245.f31fc85b.chunk.js.map": "/capstone/static/js/245.f31fc85b.chunk.js.map",
+    "main.4e45bf32.js.map": "/capstone/static/js/main.4e45bf32.js.map",
+    "955.da995f12.chunk.js.map": "/capstone/static/js/955.da995f12.chunk.js.map",
+    "245.afbabc59.chunk.js.map": "/capstone/static/js/245.afbabc59.chunk.js.map",
     "55.799617e7.chunk.js.map": "/capstone/static/js/55.799617e7.chunk.js.map",
     "784.d428d083.chunk.js.map": "/capstone/static/js/784.d428d083.chunk.js.map",
     "99.4fa0ba1b.chunk.js.map": "/capstone/static/js/99.4fa0ba1b.chunk.js.map",
@@ -43,6 +43,6 @@
   },
   "entrypoints": [
     "static/css/main.538cdcae.css",
-    "static/js/main.ff1988f5.js"
+    "static/js/main.4e45bf32.js"
   ]
 }
