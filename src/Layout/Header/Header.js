@@ -60,7 +60,7 @@ export default function Header(){
             </nav>
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--5 aem-GridColumn--phone--4">
                 <ul className="side-menu">
-                    <li> <a href="#/cart"  aria-label="Cart"><img className="side-menu-icon" src={shoppingBag} alt="Shopping Bag"/>{totalcartitem}</a></li>
+                    <li> <a href="#/cart"  aria-label="Cart"><img className="side-menu-icon" src={shoppingBag} alt="Shopping Bag"/><span>{totalcartitem}</span></a></li> 
                 </ul>
             </div>
         </header>

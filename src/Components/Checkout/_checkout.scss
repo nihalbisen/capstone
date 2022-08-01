@@ -2,6 +2,7 @@
     margin-top: 33px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 128px;
 }
 
 .check-head>h2 {
@@ -40,7 +41,6 @@
     margin-bottom: 48px;
 }
 
-
 .check-container{
     display: flex;
     justify-content:left;
@@ -69,22 +69,41 @@
     border-radius: 8px;
     width: 436px;
     height: 44px;
-    padding: 12px;
+    padding: 5px;
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, Regular", 14px, 21px, left, #181C24);
 }
+.check-items > span{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 14px, 16px, left, #C9252D);
+    display: block;
+}
+#shipformcheck{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 14px, 16px, left, #C9252D);
+}
+#shipInfoHelp{
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 14px, 16px, left, #C9252D);
+    display: block;
+}
+
 .state-zip{
     display: flex;
 }
-#state{
+#stateHelp{
+    display: block;
+}
+
+#state-ct{
     margin-right: 16px;
 }
-#state> label{
+#state-ct> label{
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, SemiBold", 16px, 24px, left, #181C24);
     display: block;
 }
-#state > select{
+#state-ct > select{
     border: 2px solid #B5B7BC;
     border-radius: 8px;
     width: 274px;
@@ -93,7 +112,7 @@
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, Regular", 14px, 21px, left, #181C24);
 }
-#state > input{
+#state-ct > input{
     border: 2px solid #B5B7BC;
     border-radius: 8px;
     width: 274px;
@@ -102,16 +121,16 @@
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, Regular", 14px, 21px, left, #181C24);
 }
-#zip >label{
+#zip-ct >label{
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, SemiBold", 16px, 24px, left, #181C24);
     display: block;
 }
-#zip >img{
+#zip-ct >img{
     margin-left: 8px
 };
 
-#zip > input{
+#zip-ct > input{
     border: 2px solid #B5B7BC;
     border-radius: 8px;
     width: 128px;
@@ -189,10 +208,15 @@
     margin-top: 26.5px;
 }
 
-.paypal{
+.border-info{
     border-top: 1px solid #D1D3D6;
     border-bottom: 1px solid #D1D3D6;
     padding: 26.5px 0;
+}
+
+.border-info > p {
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Muli, SemiBold", 20px, 25px, left, #72777F);
 }
 .check-cart-products{
     display: flex;
