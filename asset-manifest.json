@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.02df946a.css",
-    "main.js": "/capstone/static/js/main.b8e16354.js",
+    "main.css": "/capstone/static/css/main.bd9384d9.css",
+    "main.js": "/capstone/static/js/main.3196effc.js",
     "static/js/955.faa3c99c.chunk.js": "/capstone/static/js/955.faa3c99c.chunk.js",
     "static/js/245.afbabc59.chunk.js": "/capstone/static/js/245.afbabc59.chunk.js",
-    "static/js/928.3eef1a58.chunk.js": "/capstone/static/js/928.3eef1a58.chunk.js",
+    "static/js/928.47759639.chunk.js": "/capstone/static/js/928.47759639.chunk.js",
     "static/js/784.0d3b40a1.chunk.js": "/capstone/static/js/784.0d3b40a1.chunk.js",
     "static/js/99.21cb5b7e.chunk.js": "/capstone/static/js/99.21cb5b7e.chunk.js",
     "static/js/640.40e4ad06.chunk.js": "/capstone/static/js/640.40e4ad06.chunk.js",
@@ -30,11 +30,11 @@
     "static/media/facebook.svg": "/capstone/static/media/facebook.1c9767c4a18f7f3321bdae3f6d8eacb4.svg",
     "static/media/edit-2.svg": "/capstone/static/media/edit-2.f1553a709f4deb1bd7806b8006f7f878.svg",
     "static/media/placeholder-blank.svg": "/capstone/static/media/placeholder-blank.5cf1529c31a151df7200.svg",
-    "main.02df946a.css.map": "/capstone/static/css/main.02df946a.css.map",
-    "main.b8e16354.js.map": "/capstone/static/js/main.b8e16354.js.map",
+    "main.bd9384d9.css.map": "/capstone/static/css/main.bd9384d9.css.map",
+    "main.3196effc.js.map": "/capstone/static/js/main.3196effc.js.map",
     "955.faa3c99c.chunk.js.map": "/capstone/static/js/955.faa3c99c.chunk.js.map",
     "245.afbabc59.chunk.js.map": "/capstone/static/js/245.afbabc59.chunk.js.map",
-    "928.3eef1a58.chunk.js.map": "/capstone/static/js/928.3eef1a58.chunk.js.map",
+    "928.47759639.chunk.js.map": "/capstone/static/js/928.47759639.chunk.js.map",
     "784.0d3b40a1.chunk.js.map": "/capstone/static/js/784.0d3b40a1.chunk.js.map",
     "99.21cb5b7e.chunk.js.map": "/capstone/static/js/99.21cb5b7e.chunk.js.map",
     "640.40e4ad06.chunk.js.map": "/capstone/static/js/640.40e4ad06.chunk.js.map",
@@ -42,7 +42,7 @@
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02df946a.css",
-    "static/js/main.b8e16354.js"
+    "static/css/main.bd9384d9.css",
+    "static/js/main.3196effc.js"
   ]
 }
