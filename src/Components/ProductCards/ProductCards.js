@@ -54,10 +54,8 @@ export default function ProductCards(props) {
 
 
   const filterProduct = (item) => {
-    
     //find index
     index= itemval.findIndex(rank => rank === item);
-    
     // only try removing it, if it exists in the array
     if (index !== -1) {
       itemval.splice(index, 1);
@@ -65,14 +63,11 @@ export default function ProductCards(props) {
     else{
       itemval.push(item);
     }
-    
-    let testdata;
-    testdata = itemval.map(x => props.data.filter(function(item){
+    let testdata = itemval.map(x => props.data.filter(function(item){
       return item.category === x ;        
     }));
     let newcatvalues = [].concat(...testdata);
-    setData(newcatvalues);
-    
+    setData(newcatvalues); 
   }
   
   
