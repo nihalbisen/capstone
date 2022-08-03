@@ -54,7 +54,7 @@ export default function ProductCards(props) {
 
 
   const filterProduct = (item) => {
-   
+    
     //find index
     index= itemval.findIndex(rank => rank === item);
     
@@ -65,52 +65,58 @@ export default function ProductCards(props) {
     else{
       itemval.push(item);
     }
-    runcode();
+    
+    let testdata;
+    testdata = itemval.map(x => props.data.filter(function(item){
+      return item.category === x ;        
+    }));
+    let newcatvalues = [].concat(...testdata);
+    setData(newcatvalues);
+    
   }
   
-  let categoryData = [];
-  //runcode();
-  const runcode =( ) =>{
-    //console.log(itemval);
-    categoryData=props.data;
+  
+  // let categoryData = [];
+  // //runcode();
+  // const runcode =( ) =>{
+  //   //console.log(itemval);
+  //   categoryData=props.data;
         
-        if(itemval.length>0){
-            if(itemval.length===1){
-                categoryData=categoryData.filter(x=>(x.category===itemval[0]));
-            }else if(itemval.length===2){
-                categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]));
+  //       if(itemval.length>0){
+  //           if(itemval.length===1){
+  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]));
+  //           }else if(itemval.length===2){
+  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]));
 
-            }else if(itemval.length===3){
-                categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]));
+  //           }else if(itemval.length===3){
+  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]));
 
-            }else if(itemval.length===4){
-                categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]));
+  //           }else if(itemval.length===4){
+  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]));
 
-            }else if(itemval.length===5){
-                categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]) || (x.category===itemval[4]));
+  //           }else if(itemval.length===5){
+  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]) || (x.category===itemval[4]));
 
-            }
+  //           }
            
 
-        }else{
-            categoryData=props.data;
-        }
+  //       }else{
+  //           categoryData=props.data;
+  //       }
         
-        //props.data = categoryData;
-        // console.log(categoryData);
-        setData(categoryData);
+  //       //props.data = categoryData;
+  //       // console.log(categoryData);
+  //       setData(categoryData);
         
-    // testdata = JSON.parse(localStorage.getItem('catvalues')).map(x => props.data.filter(function(item){
-    //   return item.category === x ;        
-    // }));
+    
 
-    // value1 = testdata[0];
-    // value2 = testdata[1];
-    // value3 = testdata[2];
-    // value4 = testdata[3];
-    // combine = [].concat(value1,value2,value3,value4).filter(e => e);
-    // setData(combine);
-  }
+  //   // value1 = testdata[0];
+  //   // value2 = testdata[1];
+  //   // value3 = testdata[2];
+  //   // value4 = testdata[3];
+  //   // combine = [].concat(value1,value2,value3,value4).filter(e => e);
+  //   // setData(combine);
+  // }
 
   const openNav1 = () => {
     document.getElementById("mySidenav1").style.width = "90vw";
@@ -178,8 +184,8 @@ export default function ProductCards(props) {
           { props.data>=0 ? (<span className="loader">Content is loading...</span>):(
           <>
           {
-          catdata.length !== 0 ?(
-            catdata.slice(pagesVisited, pagesVisited + productPerPage)
+          prodData.length !== 0 ?(
+            prodData.slice(pagesVisited, pagesVisited + productPerPage)
                 .map((product) => {
                   
                   return (
@@ -196,8 +202,8 @@ export default function ProductCards(props) {
                   );
                 })
               ):
-              prodData.length !== 0 ? (
-                prodData
+              catdata.length !== 0 ? (
+                catdata
                 .slice(pagesVisited, pagesVisited + productPerPage)
                 .map((product) => {
                   return ( 
@@ -214,7 +220,7 @@ export default function ProductCards(props) {
                   );
                 })
   
-            ):props.data.length !== 0?
+            ):
               (
                 props.data.slice(pagesVisited, pagesVisited + productPerPage)
                 .map((product) => {
@@ -233,7 +239,7 @@ export default function ProductCards(props) {
                   );
                 })
 
-              ):(console.log("tested"))
+              )
               
 
           }
