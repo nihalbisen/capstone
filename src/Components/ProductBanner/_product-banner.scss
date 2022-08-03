@@ -1,5 +1,14 @@
 .prod-banner{
-    padding: 47px;
+    padding: 0px 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 47px;
+    width: 100%;
+}
+.prodBan-sec1{
+    width: 652px;
 }
 .prodBan-sec1>h3{
      // typo(font-family, font-size, line-height, text-align, color)
@@ -30,7 +39,104 @@
     @include divider(67px, 0px, 0px, 0px);
     display: block;
 }
-.prodBan-sec2>img{
-    width: 100%;
-    height: auto;
+.prodBan-sec2{
+    background-image: url("../Images/signatureLegging.png");
+    height: 450px;
+    width: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+//media querie
+@media screen and (max-width:328px) {
+    .prod-banner {
+        padding: 0px 16.5px;
+    }
+    .prodBan-sec1 > h3 {
+        // typo(font-family, font-size, line-height, text-align, color)
+         @include typo("Source Serif Pro, Semibold", 36px, 45px, center, #172026); 
+    }
+    .prodBan-sec1 > span {
+         // typo(font-family, font-size, line-height, text-align, color)
+         @include typo("Muli, SemiBold", 20px, 25px, center, #172026);
+    }
+    .prodBan-sec1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prodBan-sec1 > p {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .prodBan-sec1 > button {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .prodBan-divder {
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .prod-banner {
+        padding: 0px 16.5px;
+    }
+    .prodBan-sec1 > h3 {
+    // typo(font-family, font-size, line-height, text-align, color)
+     @include typo("Source Serif Pro, Semibold", 36px, 45px, center, #172026); 
+    }
+    .prodBan-sec1 > span {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Muli, SemiBold", 20px, 25px, center, #172026);
+   }
+   .prodBan-sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .prodBan-sec1 > p {
+    text-align: center;
+    margin-bottom: 32px;
+    }
+    .prodBan-sec1 > button {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .prodBan-divder {
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .prodBan-sec2:first-child{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .prodBan-sec2:first-child{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    .prodBan-sec2:first-child{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width:1920px) {
+    .prodBan-sec2:first-child{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .prodBan-sec2:first-child{
+        display: none;
+    }
 }

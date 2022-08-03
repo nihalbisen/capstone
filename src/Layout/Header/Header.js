@@ -3,7 +3,7 @@ import shoppingBag from "../../Images/shopping-bag.svg";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
-import drawer from "../../Images/align-justify.png";
+import drawer from "../../Images/menu.svg";
 
 export default function Header(){
     //let { cartTotalQuantity } = useSelector((state) => state.cart);
@@ -28,15 +28,15 @@ export default function Header(){
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--2 aem-GridColumn--phone--8">
                     <div id="mySidenav" class="sidenav">
                         <span class="closebtn" onClick={closeNav} >&times;</span>
-                        <a href="/" className="cat-head" aria-label="shop-categories">Shop Categories</a>
-                        <a href="/" aria-label="women">Women</a>
-                        <a href="/" aria-label="men">Men</a>
-                        <a href="/" aria-label="smart-gear">Smart Gear</a>
-                        <a href="/" aria-label="accessories">Accessories</a>
+                        <a href="/capstone/" className="cat-head" aria-label="shop-categories">Shop Categories</a>
+                        <a href="#/category/women's clothing" aria-label="women">Women</a>
+                        <a href="#/category/men's clothing" aria-label="men">Men</a>
+                        <a href="#/category/electronics" aria-label="Electronics">Electronics</a>
+                        <a href="#/category/jewelery" aria-label="Jewellery">Jewellery</a>
 
                         <div className="sidenav-bottom">
-                            <a href="/" aria-label="Account"><img src={user} alt="Search"/>Account</a>
-                            <a href="/" aria-label="sign in">Sign-in</a>
+                            <a href="/capstone/" aria-label="Account"><img src={user} alt="Search"/>Account</a>
+                            <a href="/capstone/" aria-label="sign in">Sign-in</a>
                         </div>
                     </div> 
 
@@ -44,14 +44,14 @@ export default function Header(){
                     <img src={drawer} alt="drawer menu" onClick={openNav} id="drawer-menu"/>
                 
                 
-                <a href="/" aria-label="Home" className="logo">
+                <a href="/capstone/" aria-label="Home" className="logo">
                     <span data-content="VENIA">VENIA</span>
                 </a>
             </div>
             
             <nav role="navigation" aria-label="Main" className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--5 aem-GridColumn--phone--hide">
                 <ul className="menu">
-                    <li><a href="/" aria-label="Home">Home</a></li>
+                    <li><a href="/capstone/" aria-label="Home">Home</a></li>
                     <li><a href="#/category/women's clothing" aria-label="Women">Women</a></li>
                     <li><a href="#/category/men's clothing" aria-label="Men">Men</a></li>
                     <li><a href="#/category/electronics" aria-label="Electronics">Electronics</a></li>
@@ -60,7 +60,7 @@ export default function Header(){
             </nav>
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--5 aem-GridColumn--phone--4">
                 <ul className="side-menu">
-                    <li> <a href="#/cart"  aria-label="Cart"><img className="side-menu-icon" src={shoppingBag} alt="Shopping Bag"/><span>{totalcartitem}</span></a></li> 
+                    <li> <a href="#/cart/"  aria-label="Cart"><img className="side-menu-icon" src={shoppingBag} alt="Shopping Bag"/><span>{totalcartitem}</span></a></li> 
                 </ul>
             </div>
         </header>

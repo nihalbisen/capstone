@@ -2,9 +2,9 @@ import React, { useState} from "react";
 import help from "../../Images/help-circle.svg";
 export default function PaymentForm({setDisplayComp}){
     const [state, setState] = useState({
-        paymentType: '',
+        paymentType: 'Credit Card',
         name:'',
-        creditCardNum:'',
+        creditCardNum:'4567',
         expireDate:'',
         cvv:'',
         billingAddressSameAsShippingAddress:''
@@ -12,19 +12,10 @@ export default function PaymentForm({setDisplayComp}){
 
     const onSubmit = (e) => {
         const shipInfoText = document.querySelector('#shipInfoHelp');
-        
-        if(Object.values(state.paymentType && state.name && state.creditCardNum && state.expireDate && state.cvv && state.billingAddressSameAsShippingAddress).length>0)
-        {   
-            shipInfoText.innerHTML = "";
-            console.log("form sucessfully submitted");
-            localStorage.setItem('PaymentInfo', JSON.stringify(state));
-            setDisplayComp({Payment: false, PaymentDetails: true})
-        }
-        else{
-            console.log("Please fill all the fields!");
-            shipInfoText.innerHTML = "Please fill all the fields!";
-            shipInfoText.style = "color:#C9252D";
-        }
+        shipInfoText.innerHTML = "";
+        console.log("form sucessfully submitted");
+        localStorage.setItem('PaymentInfo', JSON.stringify(state));
+        setDisplayComp({Payment: false, PaymentDetails: true})
     }
     
     return(

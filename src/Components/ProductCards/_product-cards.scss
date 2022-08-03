@@ -130,6 +130,79 @@
   display: none;
 }
 
+.filter-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.filter-items > button{
+  margin-right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.filter-items > button >img{
+  width: auto;
+  height: 16px;
+  padding-right: 2px;
+}
+.filter-items > button >span{
+  margin: 0 8px;
+  text-decoration: underline;
+  // typo(font-family, font-size, line-height, text-align, color)
+  @include typo("Muli, SemiBold", 16px, 20px, left, #181C24);
+  text-transform: capitalize;
+}
+
+/* The side navigation menu */
+.sidefilter {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #FFFFFF; /* white*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidefilter-container{
+  margin: 30px 20px;
+}
+.sidefilter-container> span{
+  // typo(font-family, font-size, line-height, text-align, color)
+  @include typo("Muli, SemiBold", 14px, 24px, left, #181C24);
+  text-decoration: underline;
+}
+.sidefilter-container > .attribute-sec{
+  border-top: 2px solid #D1D3D6;
+  padding-top: 16px;
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidefilter .closebtn {
+  font-size: 28px;
+  color: #1D1D1B;
+  cursor: pointer;
+}
+.sidefilter-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  background-color: #E5E5E7;
+}
+.sidefilter-head > a{
+  // typo(font-family, font-size, line-height, text-align, color)
+  @include typo("Muli, SemiBold", 16px, 24px, left, #1D1D1B);
+  text-decoration: none;
+}
+
 
 //media querie
 @media screen and (max-width:328px){
@@ -146,6 +219,10 @@
     }
     .prod-items {
       height: 355px;
+    }
+    .result-count{
+      display: flex;
+      justify-content: center;
     }
     
 
@@ -165,22 +242,36 @@
       padding-right: 0px;
       padding-left: 0px;
     }
+    .result-count{
+      display: flex;
+      justify-content: center;
+    }
   
     }
   @media screen and (min-width:768px) and (max-width:1024px){
-      
+    .filter-items{
+      display: none;
+    }
       
     }
   @media screen and (min-width:1024px) and (max-width:1280px){
-      
+    .filter-items{
+      display: none;
+    }
       
     }
   @media screen and (min-width:1280px) and (max-width:1440px){
-     
+    .filter-items{
+      display: none;
+    }
     }
   @media screen and (min-width:1440px) and (max-width:1920px){
-     
+    .filter-items{
+      display: none;
+    }
     }
   @media screen and (min-width:1920px){
-     
+    .filter-items{
+      display: none;
+    }
     }

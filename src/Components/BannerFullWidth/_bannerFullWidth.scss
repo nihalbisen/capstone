@@ -1,14 +1,25 @@
 .ban-full{
-    padding: 0 10px;
-    background-color: #1B252C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ban-full-sec1{
+    width: 698px;
 }
 .ban-full-sec1 > img{
  width: 100%;
- height: auto;
+ height: 400px;
 }
 .ban-full-sec2{
-    
-    padding: 82px 24px;
+    background-color: #1B252C;
+    width: 554px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 54px;
+    position: relative;
 }
 .ban-full-sec2 > h2{
     // typo(font-family, font-size, line-height, text-align, color)
@@ -16,7 +27,6 @@
     margin-bottom: 16px;
 }
 .ban-full-sec2 > span{
-    display: block;
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Muli, SemiBold", 20px, 25px, left, #FFFFFF);
     margin-bottom: 16px;
@@ -24,4 +34,96 @@
 .ban-full-sec2>button{
     @include primary-outline-btn2();
     margin-bottom: 16px;
+}
+.ban-full-sec2 > img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    bottom: 64.5px;
+    left: -27px;
+}
+.ban-full-sec2 > hr{
+    @include divider(0px, 0px, 0px, 0px);
+    position: absolute;
+    bottom: 40px;
+    left: -51px;
+}
+
+
+//media querie
+@media screen and (max-width:328px) {
+    .ban-full-sec2 {
+        width: 100%;
+        margin: 0 16px;
+    } 
+    .ban-full-sec1 > img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 40px;
+    }
+    .ban-full-sec2 > img {
+        left: 82.5px;
+        top: -22px;
+        padding-bottom: 5px;
+        border-bottom: 8px solid #1363DF;
+    }
+    .ban-full-sec2 > hr {
+        display: none;
+     }
+     .ban-full-sec2 > h2 {
+        // typo(font-family, font-size, line-height, text-align, color)
+        text-align: center !important;
+     }
+    
+    
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .ban-full-sec2 {
+        width: 100%;
+        margin: 0 16px;
+    } 
+    .ban-full-sec1 > img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 40px;
+    }
+    .ban-full-sec2 > img {
+        left: 82.5px;
+        top: -22px;
+        padding-bottom: 10px;
+        border-bottom: 8px solid #1363DF;
+    }
+    .ban-full-sec2 > hr {
+       display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .ban-full-sec2 {
+        width: 100%;
+        margin: 0 16px;
+    } 
+    .ban-full-sec1 > img {
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:1920px) {
+   
+}
+
+@media screen and (min-width:1920px) {
+    
 }

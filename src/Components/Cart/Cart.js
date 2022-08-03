@@ -51,7 +51,7 @@ export default function Cart() {
                 <div className="cart-empty">
                     <p>Your Cart is currently Empty</p>
                     <div className="start-shopping">
-                        <a href="/" aria-label="home">
+                        <a href="/capstone/" aria-label="home">
                             <img src={arrowleft} alt="arrow left" /> Start Shopping
                         </a>
                     </div>
@@ -120,7 +120,7 @@ export default function Cart() {
                             <span>Estimated Shipping: FREE</span>
                             <span>Estimated Total: ${cart.cartTotalAmount}</span>
                             <div className="checkout-btn">
-                                <button onClick={() => { navigate("checkout") }}>Checkout</button>
+                                <button onClick={() => { navigate("/cart/checkout/") }}>Checkout</button>
                                 <a href="/" aria-label="PayPal"><img src={paypalbtn} alt="PayPal" /></a>
                             </div>
                         </div>
@@ -136,9 +136,9 @@ export default function Cart() {
                   return (
                 <div key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--4 aem-GridColumn--phone--10">
                     <div className="prod-image">
-                    <img src={product.image} alt={product.title} onClick={() => { navigate("product/" + product.id) }}/>
+                    <img src={product.image} alt={product.title} onClick={() => { navigate("/cart/product/" + product.id) }}/>
                     </div>
-                    <span className="prod-title" onClick={() => { navigate("product/" + product.id) }} >{product.title}</span>
+                    <span className="prod-title" onClick={() => { navigate("/cart/product/" + product.id) }} >{product.title}</span>
                     <span className="prod-price">${product.price}</span>
                     <img className="fav-prod" src={fav} alt="add favorite" />
                 </div>

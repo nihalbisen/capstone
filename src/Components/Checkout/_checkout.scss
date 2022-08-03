@@ -46,6 +46,7 @@
     justify-content:left;
     margin-bottom: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .check-items{
     margin-right: 32px;
@@ -90,6 +91,7 @@
 
 .state-zip{
     display: flex;
+    flex-wrap: wrap;
 }
 #stateHelp{
     display: block;
@@ -183,7 +185,7 @@
 }
 .ship-info-details > div{
     width: 312px;
-    margin-right: 120px;
+    margin-right: 80px;
 }
 .ship-method{
     margin-top: 26px;
@@ -264,3 +266,102 @@
     @include primary-outline-btn3();
 }
 
+//media querie
+@media screen and (max-width:328px) {
+    .check-items > input {
+        width: 280px;
+    }
+    .check-items > select {
+        width: 280px;
+    }
+    #state-ct > select {
+        width: 280px;
+    }
+    #zip-ct > input {
+        width: 280px;
+    }
+    #state-ct > input {
+        width: 280px;
+    }
+    #zip-ct > img {
+        display: none;
+    }
+    .pricing-summary {
+        border: none;
+    }
+    .social-offer {
+        display: none;
+    }
+    .success-head > h2 {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Source Serif Pro, Semibold", 36px !important, 45px !important, center, #172026);
+    }
+    .success-grid {
+        flex-wrap: wrap;
+    }
+    .ship-info-details > div {
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .check-items > input {
+        width: 343px;
+    }
+    .check-items > select {
+        width: 343px;
+    }
+    #state-ct > select {
+        width: 343px;
+    }
+    #zip-ct > input {
+        width: 343px;
+    }
+    #state-ct > input {
+        width: 343px;
+    }
+    .exp-check {
+        display: none;
+    }
+    #zip-ct > img {
+        display: none;
+    }
+    .pricing-summary {
+        border: none;
+    }
+    .social-offer {
+        display: none;
+    }
+    .success-head > h2 {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Source Serif Pro, Semibold", 36px !important, 45px !important, center, #172026);
+    }
+    .success-grid {
+        flex-wrap: wrap;
+    }
+    .ship-info-details > div {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .social-offer {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    
+}
+
+@media screen and (min-width:1440px) and (max-width:1920px) {
+    
+}
+
+@media screen and (min-width:1920px) {
+    
+}

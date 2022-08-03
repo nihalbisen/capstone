@@ -1,9 +1,22 @@
 @import "../../Sass/common/buttons";
+
 .hero{
-    background: transparent url("../Images/placeholder-blank.svg");
+    width: 100%;
+    
+    
 }
 .hero-sec1{
     padding: 40px 100px;
+    background: url("../Images/placeholder-blank.svg");
+    height: 450px;
+}
+.hero-sec2{
+    
+    height: 450px;
+    background: url("../Images/hero-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 .hero-sec1>h2{
     // typo(font-family, font-size, line-height, text-align, color)
@@ -22,4 +35,93 @@
 .hero-sec2>img{
     width: 100%;
     height: auto;
+}
+
+//media querie
+@media screen and (max-width:328px) {
+    .hero-sec1 {
+        padding: 0 16px;
+        padding-top: 288px;
+        background: url("../Images/hero-banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        position: relative;
+    }
+    .hero-sec1 > h2 {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Source Serif Pro, Semibold", 36px, 45px, center, #1B252C);
+      }
+      .hero-sec1 > p {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Muli, Regular", 16px, 24px, center, #1B252C);
+      }
+      .hero-sec1>button {
+        margin: 8px auto;
+        display: block;
+    }
+    .cat-items {
+        width: 343px;
+        height: 268px;
+    }
+    .cat {
+        top:-50px;
+    }
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .hero-sec1 {
+        padding: 0 16px;
+        padding-top: 288px;
+        background: url("../Images/hero-banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        position: relative;
+    }
+      .hero-sec1 > h2 {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Source Serif Pro, Semibold", 36px, 45px, center, #1B252C);
+      }
+      .hero-sec1 > p {
+        // typo(font-family, font-size, line-height, text-align, color)
+        @include typo("Muli, Regular", 16px, 24px, center, #1B252C);
+      }
+        .hero-sec1>button {
+            margin: 8px auto;
+            display: block;
+        }
+        .cat-items {
+            width: 343px;
+            height: 268px;
+        }
+        .cat {
+            top:-50px;
+        }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .hero-sec1 {
+        height: 600px;
+    }
+    .hero-sec2 {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+   
+}
+
+@media screen and (min-width:1440px) and (max-width:1920px) {
+    
+}
+
+@media screen and (min-width:1920px) {
+    
 }

@@ -37,9 +37,14 @@
 }
 .filter-option > li{
     margin-top: 22px;
+    display: flex;
+    align-items: center;
 }
 .filter-option > li> input{
     margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #91959C;
 }
 .show-more{
     font-family: "Muli, SemiBold";

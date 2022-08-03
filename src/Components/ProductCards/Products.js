@@ -8,7 +8,7 @@ export default function Products(){
     
    
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/category/${category}`)
+        fetch(`https://fakestoreapi.com/products`)
         .then((res) => res.json())
         .then((data) => setDataCat(data));
         // eslint-disable-next-line 

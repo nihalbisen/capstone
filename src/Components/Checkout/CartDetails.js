@@ -25,7 +25,7 @@ export default function CartDetails(){
                     ))}
                 </div>
             </div>
-            <button id="place-order" onClick={() => { navigate("order-success") }}>PLACE ORDER</button>
+            <button id="place-order" onClick={() => { navigate("order-success/") }}>PLACE ORDER</button>
             <p id="terms">By clicking confirm order you agree to our <a href="/" aria-label="Terms and Conditions">Terms and Conditions</a></p>
         </>
     );

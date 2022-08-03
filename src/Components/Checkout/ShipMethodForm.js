@@ -2,7 +2,7 @@ import React, { useState} from "react";
 export default function ShipMethodForm({setDisplayComp}){
 
     const [state, setState] = useState({
-        method: '',
+        method: 'Standard Shipping Est. delivery in 4 - 8 business days FREE',
     });
     
     const onSubmit = (e) => {

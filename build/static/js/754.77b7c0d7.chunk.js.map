@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/754.77b7c0d7.chunk.js","mappings":"kKAAe,SAASA,IACpB,OACI,+BACA,4CAGP,C","sources":["Pages/PageNotFound/PageNotFound.js"],"sourcesContent":["export default function PageNotFound(){\r\n    return(\r\n        <>\r\n        <h3>Page Not Found</h3>\r\n        </>\r\n    );\r\n}"],"names":["PageNotFound"],"sourceRoot":""}

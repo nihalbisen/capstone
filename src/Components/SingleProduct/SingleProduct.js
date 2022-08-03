@@ -43,11 +43,14 @@ export default function SingleProduct(){
         setNum(e.target.value);
     }
 
+
+  
+
     return(
         <>
         { DataProd>=0 ? (<span className="loader">Content is loading...</span>):(
             <>
-        <section className="aem-Grid aem-Grid--12">
+        <section className="product-container aem-Grid aem-Grid--12">
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-Grid aem-Grid--12">
                 <div className="product-img-slide aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide aem-GridColumn--tablet--hide">
                     <img src={DataProd.image} alt={DataProd.title}/>
@@ -56,8 +59,21 @@ export default function SingleProduct(){
                     <img src={DataProd.image} alt={DataProd.title}/>
                     <img src={DataProd.image} alt={DataProd.title}/>
                 </div>
+
+
                 <div className="product-img aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
                     <img src={DataProd.image} alt={DataProd.title}/>
+                </div>
+                <div className="carousel aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--hide">
+                    {/* <!-- The dots/circles --> */}
+                    <div style={{textAlign:`center`}}>
+                        <span className="dot" ></span>
+                        <span className="dot" ></span>
+                        <span className="dot" ></span>
+                        <span className="dot" ></span>
+                        <span className="dot" ></span>
+                    </div>                        
+                                    
                 </div>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 prod-desc">

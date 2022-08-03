@@ -3,21 +3,21 @@ import React, { useState} from "react";
 export default function ShippingInfoForm({setDisplayComp}){
     
     const [state, setState] = useState({
-        email: '',
-        phone: '',
-        country: '',
-        firstName: '',
-        lastName: '',
-        address1:'',
-        address2:'',
-        city:'',
-        state:'',
-        zip:'',
+        email: 'q_farhan@gmail.com',
+        phone: '+1 (555) 229-3367',
+        country: 'United States',
+        firstName: 'Qadim',
+        lastName: 'Farhan',
+        address1:'1098',
+        address2:'Wapello',
+        city:'Street',
+        state:'California',
+        zip:'91001',
         orderno:Math.floor(Math.random() * 10000000),
     });
 
     const onSubmit = (e) => {
-        const shipInfoText = document.querySelector('#shipInfoHelp');
+        const shipInfoText = document.querySelector('#cityHelp');
         if(Object.values(state.email && state.phone && state.country && state.firstName && state.lastName && state.address1 && state.address2 && state.city && state.state && state.zip).length>0)
         {   
             shipInfoText.innerHTML = "";
@@ -31,16 +31,14 @@ export default function ShippingInfoForm({setDisplayComp}){
             shipInfoText.innerHTML = "Please fill all the fields!";
             shipInfoText.style = "color:#C9252D";
         }
-        //e.preventDefault()
-        // localStorage.setItem('shippingInfo', JSON.stringify(state));
-        // setDisplayComp({ShippingForm: false, ShipMethodForm: true })
+        
         
     }
 
    
     
     const validateEmail = (e) => {
-        const submitForm = document.querySelector('#submitForm');
+        //const submitForm = document.querySelector('#submitForm');
         const emailText = document.querySelector('#emailHelp');
         // eslint-disable-next-line
         const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -48,14 +46,13 @@ export default function ShippingInfoForm({setDisplayComp}){
             emailText.innerHTML = "Valid email address!";
             emailText.style = "color:green";
             document.querySelector("#email").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, email: e.target.value})
         }
         else {
             emailText.innerHTML = "You have entered an invalid email address!";
             emailText.style = "color:#C9252D";
             document.querySelector("#email").style.border="2px solid #EC5B62";
-            submitForm.setAttribute("disabled", true);
         }
     }
 
@@ -67,7 +64,7 @@ export default function ShippingInfoForm({setDisplayComp}){
             phoneText.innerHTML = "valid phone number!";
             phoneText.style = "color:green";
             document.querySelector("#phone").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, phone: e.target.value})
         }
         else {
@@ -84,7 +81,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             countryText.innerHTML = "";
             document.querySelector("#country").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, country: e.target.value})
         }
         else {
@@ -101,7 +98,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             firstNameText.innerHTML = "";
             document.querySelector("#first-name").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, firstName: e.target.value})
         }
         else {
@@ -118,7 +115,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             lastNameText.innerHTML = "";
             document.querySelector("#last-name").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, lastName: e.target.value})
         }
         else {
@@ -135,7 +132,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             address1Text.innerHTML = "";
             document.querySelector("#address1").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, address1: e.target.value})
         }
         else {
@@ -152,7 +149,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             address2Text.innerHTML = "";
             document.querySelector("#address2").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, address2: e.target.value})
         }
         else {
@@ -169,7 +166,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             cityText.innerHTML = "";
             document.querySelector("#city").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, city: e.target.value})
         }
         else {
@@ -186,7 +183,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.length > 0) {
             steteText.innerHTML = "";
             document.querySelector("#state").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, state: e.target.value})
         }
         else {
@@ -204,7 +201,7 @@ export default function ShippingInfoForm({setDisplayComp}){
         if (e.target.value.match(zipformat)) {
             steteText.innerHTML = "";
             document.querySelector("#zip").style.border="2px solid green";
-            submitForm.removeAttribute("disabled", true);
+            
             setState({...state, zip: e.target.value})
         }
         else {

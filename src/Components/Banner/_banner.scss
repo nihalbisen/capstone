@@ -15,19 +15,25 @@
 }
 .banner-sec1{
     background-color: #1B252C;
-    padding: 95px 90px; 
+    height: 372.4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .banner-title{
     // typo(font-family, font-size, line-height, text-align, color)
     @include typo("Source Serif Pro, Semibold", 48px, 60px, center, white);
+    text-transform: capitalize;
 }
 .divider{
     // divider(margin-top, margin-left, margin-bottom, margin-right)
     @include divider(32px, auto, 0px, auto);
 }
 
-.banner-sec2> img{
-    width: 100%;
+.banner-sec2{
+    background-image: url("../Images/banner-top.png");
+    background-position: center center;
+    background-size: cover;
     height: 320px;
 }
 //media querie
@@ -35,10 +41,14 @@
     .banner-container {
         display: block;
     }
+    .banner-sec2 {
+        height: 193px;
+    }
     .banner-sec2 > img {
         width: 100vw;
         height: auto;
     }
+    
     .banner-title {
         font-size: 36px;
         line-height: 42px;
@@ -51,6 +61,9 @@
 @media screen and (min-width:328px) and (max-width:768px) {
     .banner-container {
         display: block;
+    }
+    .banner-sec2 {
+        height: 193px;
     }
     .banner-sec2 > img {
         width: 100vw;

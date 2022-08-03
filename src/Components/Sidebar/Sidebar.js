@@ -9,30 +9,30 @@ export default function Sidebar({filterProduct}){
             <div className="attribute-sec">
                 <h2 className="attribute-title">Categories</h2>
                 <ul className="filter-option">
-                    <li><input type="checkbox" id="Jewellery" name="Categories" value="Jewellery" 
-                    onClick={() => {
+                    <li><input type="checkbox" id="Jewellery" name="Categories" value="jewelery" 
+                    onChange={() => {
                         setIsChosen(!isChosen);
-                        filterProduct("Jewellery");
+                        filterProduct("jewelery");
                     }} />
                         <label htmlFor="Jewellery">Jewellery</label></li>
 
-                    <li><input type="checkbox" id="Electronics" name="Categories" value="Electronics" 
-                    onClick={() => {
+                    <li><input type="checkbox" id="Electronics" name="Categories" value="electronics" 
+                    onChange={() => {
                         setIsChosen(!isChosen);
-                        filterProduct("Electronics");
+                        filterProduct("electronics");
                     }}/>
                     <label htmlFor="Electronics">Electronics</label></li>
                     
-                    <li><input type="checkbox" id="Men's Clothing" name="Categories" value="Men's Clothing" onClick={() => {
+                    <li><input type="checkbox" id="Men's Clothing" name="Categories" value="men's clothing" onChange={() => {
                         setIsChosen(!isChosen);
-                        filterProduct("Men's Clothing");
+                        filterProduct("men's clothing");
                     }}/>
                     <label htmlFor="Men's Clothing">Men's Clothing</label></li>
 
-                    <li><input type="checkbox" id="Women's Clothing" name="Categories" value="Women's Clothing" 
-                    onClick={() => {
+                    <li><input type="checkbox" id="Women's Clothing" name="Categories" value="women's clothing" 
+                    onChange={() => {
                         setIsChosen(!isChosen);
-                        filterProduct("Women's Clothing");
+                        filterProduct("women's clothing");
                     }} />
                     <label htmlFor="Women's Clothing">Women's Clothing</label></li>
                 </ul>

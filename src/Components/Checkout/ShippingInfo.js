@@ -16,7 +16,7 @@ export default function ShippingInfo({setDisplayComp}){
                 </div>
                 <div className="ship-info-details">
                     <p>{email} {phone}</p>
-                    <p>{firstName} {lastName} {address1}, {address2}, {city} {zip} {state} {country} </p>
+                    <p>{firstName} {lastName} {address1} {address2} {city} {zip} {state} {country} </p>
                 </div>
             </div>
         </>
