@@ -5524,16 +5524,6 @@ footer {
   letter-spacing: 5px;
 }
 
-.footer-logo > span:before {
-  content: attr(data-content);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.3em;
-  overflow: hidden;
-  color: #3D84FF;
-}
-
 .copyright {
   font-family: "Muli, Regular";
   font-size: 14px;
@@ -5964,7 +5954,7 @@ footer {
 }
 
 .divider {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 32px;
   margin-left: auto;
@@ -6665,7 +6655,7 @@ footer {
 }
 
 .cart-head > hr {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 10px;
   margin-left: auto;
@@ -7070,7 +7060,7 @@ footer {
   background-color: #1B252CD9;
   padding: 17px 10px;
   margin-top: 50%;
-  border-bottom: 8px solid #1F39FF;
+  border-bottom: 8px solid #1363DF;
 }
 
 .cat-details > h2 {
@@ -7358,7 +7348,7 @@ footer {
 }
 
 .prodBan-divder {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 67px;
   margin-left: 0px;
@@ -7582,7 +7572,7 @@ footer {
 }
 
 .ban-full-sec2 > hr {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 0px;
   margin-left: 0px;
@@ -7667,7 +7657,7 @@ footer {
 }
 
 .check-head > hr {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 10px;
   margin-left: auto;
@@ -8204,7 +8194,7 @@ footer {
 }
 
 .success-head > hr {
-  border: 4px solid #1F39FF;
+  border: 4px solid #1363DF;
   width: 102px;
   margin-top: 10px;
   margin-left: auto;

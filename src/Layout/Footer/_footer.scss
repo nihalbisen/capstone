@@ -61,14 +61,14 @@ footer{
     letter-spacing: 5px; 
 }
 
-.footer-logo>span:before{
-    content: attr(data-content);
-    position:absolute;
-    top:0; left:0;
-    width:0.3em;
-    overflow:hidden;
-    color:#3D84FF;
-  }
+// .footer-logo>span:before{
+//     content: attr(data-content);
+//     position:absolute;
+//     top:0; left:0;
+//     width:0.3em;
+//     overflow:hidden;
+//     color:#3D84FF;
+//   }
 
   //copyright
   .copyright{

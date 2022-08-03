@@ -1,5 +1,5 @@
 @mixin divider($top, $left, $bottom, $right){
-    border: 4px solid #1F39FF;
+    border: 4px solid #1363DF;
     width: 102px;
     margin-top: $top;
     margin-left: $left;
@@ -8,5 +8,5 @@
 }
 
 @mixin divider2(){
-    border-bottom: 8px solid #1F39FF;
+    border-bottom: 8px solid #1363DF;
 }
