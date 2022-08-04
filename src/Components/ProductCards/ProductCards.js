@@ -11,6 +11,7 @@ import sliders from "../../Images/sliders.svg";
 
 export default function ProductCards(props) {
   const [pageNumber, setPageNumber] = useState(0);
+  
 
   const productPerPage = 9; 
   const pagesVisited = pageNumber * productPerPage;
@@ -21,7 +22,7 @@ export default function ProductCards(props) {
     return item.category === props.category;
   });
   
-  const pageCount = Math.ceil((catdata.length !==0 ? catdata.length : prodData.length !==0 ? prodData.length : props.data.length) / productPerPage);
+  const pageCount = Math.ceil((prodData.length !==0 ? prodData.length : catdata.length !==0 ? catdata.length : props.data.length) / productPerPage);
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
@@ -46,72 +47,42 @@ export default function ProductCards(props) {
   }
   
   let navigate = useNavigate();
-  const itemval = [];
-  let index;
   
-  
-  
+  const [checkedProducts , setCheckedProducts] = useState([]);
 
+  const filterCat = () =>{
+    var data = props.data,
+    filterBy = { category:[...checkedProducts] },
+    result = data.filter(function (o) {
+        return Object.keys(filterBy).every(function (k) {
+            return filterBy[k].some(function (f) {
+                return o[k] === f;
+            });
+        });
+    },);
+    setData(result);
+  }
 
-  const filterProduct = (item) => {
-    //find index
-    index= itemval.findIndex(rank => rank === item);
-    // only try removing it, if it exists in the array
-    if (index !== -1) {
-      itemval.splice(index, 1);
-    }
-    else{
-      itemval.push(item);
-    }
-    let testdata = itemval.map(x => props.data.filter(function(item){
-      return item.category === x ;        
-    }));
-    let newcatvalues = [].concat(...testdata);
-    setData(newcatvalues); 
+  const filterProduct = event => {
+    const categoryName = event.target.value;
+    
+    setCheckedProducts((prev) =>
+        checkedProducts.includes(categoryName)
+            ? prev.filter((cur) => cur !== categoryName)
+            : [...prev, event.target.value]
+    );
+    //console.log(checkedProducts);
+    filterCat()
   }
   
   
-  // let categoryData = [];
-  // //runcode();
-  // const runcode =( ) =>{
-  //   //console.log(itemval);
-  //   categoryData=props.data;
-        
-  //       if(itemval.length>0){
-  //           if(itemval.length===1){
-  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]));
-  //           }else if(itemval.length===2){
-  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]));
 
-  //           }else if(itemval.length===3){
-  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]));
 
-  //           }else if(itemval.length===4){
-  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]));
 
-  //           }else if(itemval.length===5){
-  //               categoryData=categoryData.filter(x=>(x.category===itemval[0]) || (x.category===itemval[1]) || (x.category===itemval[2]) || (x.category===itemval[3]) || (x.category===itemval[4]));
+ 
+  
+  
 
-  //           }
-           
-
-  //       }else{
-  //           categoryData=props.data;
-  //       }
-        
-  //       //props.data = categoryData;
-  //       // console.log(categoryData);
-  //       setData(categoryData);
-        
-    
-
-  //   // value1 = testdata[0];
-  //   // value2 = testdata[1];
-  //   // value3 = testdata[2];
-  //   // value4 = testdata[3];
-  //   // combine = [].concat(value1,value2,value3,value4).filter(e => e);
-  //   // setData(combine);
-  // }
 
   const openNav1 = () => {
     document.getElementById("mySidenav1").style.width = "90vw";
