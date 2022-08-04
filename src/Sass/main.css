@@ -7612,8 +7612,8 @@ footer {
 
 @media screen and (min-width: 328px) and (max-width: 768px) {
   .ban-full-sec2 {
-    width: 70vw;
-    margin: 0 0;
+    width: 100%;
+    margin: 0 16px;
   }
   .ban-full-sec1 > img {
     width: 100%;

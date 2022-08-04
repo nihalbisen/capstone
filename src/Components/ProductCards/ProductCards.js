@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {React, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import fav from "../../Images/heart.png";
 import Banner from "../Banner/Banner";
@@ -7,6 +7,7 @@ import ReactPaginate from "react-paginate";
 import arrowdown from "../../Images/arrow-down.svg";
 import arrowup from "../../Images/arrow-up.svg";
 import sliders from "../../Images/sliders.svg";
+
 
 
 export default function ProductCards(props) {
@@ -27,62 +28,67 @@ export default function ProductCards(props) {
     setPageNumber(selected);
   };
 
-  
-  const sorted = (catdata.length !== 0 ? [...catdata].sort((a, b) => b["price"] - a["price"]):[...props.data].sort((a, b) => b["price"] - a["price"]));
+
+  const [sortvalue, setSortValue] = useState([]);
+  const sorted = (prodData.length !== 0 ? [...prodData].sort((a, b) => b["price"] - a["price"]):catdata.length !== 0 ? [...catdata].sort((a, b) => b["price"] - a["price"]):[...props.data].sort((a, b) => b["price"] - a["price"]));
     
+  
 
   const sortByPrice = (e) => {
+    
     if (e.target.value === "hightolow") {
       
-      setData(sorted);
-      
+      setSortValue(sorted);
+      console.log(prodData);
     }
     else if (e.target.value === "lowtohigh") {
       
-      setData(sorted.reverse());
+      setSortValue(sorted.reverse());
     }
     else{
-      setData(props.data);
+      setSortValue(prodData);
     }
   }
   
   let navigate = useNavigate();
   
-  const [checkedProducts , setCheckedProducts] = useState([]);
+  const [checkedProducts , setCheckedProducts ] = useState([]);
 
-  const filterCat = () =>{
-    var data = props.data,
-    filterBy = { category:[...checkedProducts] },
-    result = data.filter(function (o) {
-        return Object.keys(filterBy).every(function (k) {
-            return filterBy[k].some(function (f) {
-                return o[k] === f;
-            });
-        });
-    },);
-    setData(result);
-  }
+  
 
-  const filterProduct = event => {
+  const vvid = 
+    
+    setTimeout(function(){
+      var data = props.data,
+      filterBy = { category:[...checkedProducts] },
+      result = data.filter(function (o) {
+          return Object.keys(filterBy).every(function (k) {
+              return filterBy[k].some(function (f) {
+                  return o[k] === f;
+              });
+          });
+      },);
+      setData(result);
+      console.log(result);
+    },400);
+    
+    
+    
+
+
+  const filterProduct = (event) => {
+    
     const categoryName = event.target.value;
     setCheckedProducts((prev) =>
         checkedProducts.includes(categoryName)
             ? prev.filter((cur) => cur !== categoryName)
             : [...prev, event.target.value]
     );
-    //console.log(checkedProducts);
-    filterCat()
+    //console.log(checkedProducts); 
+    setTimeout(vvid,700);
+    
   }
-  
 
- 
-  
-  
-
-
-
- 
-  
   
 
 
@@ -94,6 +100,9 @@ export default function ProductCards(props) {
     document.getElementById("mySidenav1").style.width = "0";
   }
   
+ 
+  
+ 
   
   return (
     <>
@@ -137,7 +146,7 @@ export default function ProductCards(props) {
             <button><img src={arrowup} alt="arrowup"/><img src={arrowdown} alt="arrowdown"/><span>Sort Products</span></button>
           </div>
           <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-            <span className="result-count">{catdata.length !==0 ? catdata.length : prodData.length !==0 ? prodData.length : props.data.length} Results</span>
+            <span className="result-count">{ prodData.length !==0 ? prodData.length :catdata.length !==0 ? catdata.length : props.data.length} Results</span>
           </div>
           <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--hide">
             <form className="sorting">
@@ -151,7 +160,25 @@ export default function ProductCards(props) {
           </div>
           { props.data>=0 ? (<span className="loader">Content is loading...</span>):(
           <>
-          {
+          {  
+          sortvalue.length !== 0 ?(
+            sortvalue.slice(pagesVisited, pagesVisited + productPerPage)
+                .map((product) => {
+                  
+                  return (
+                    <>
+                      <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
+                        <div className="prod-image">
+                          <img src={product.image} alt={product.title} onClick={() => { navigate("product/"+product.id) }} />
+                        </div>
+                        <span className="prod-title" onClick={() => { navigate("product/" + product.id) }} >{product.title}</span>
+                        <span className="prod-price">${product.price}</span>
+                        <img className="fav-prod" src={fav} alt="add favorite" />
+                      </section>
+                    </>
+                  );
+                })
+              ):
           prodData.length !== 0 ?(
             prodData.slice(pagesVisited, pagesVisited + productPerPage)
                 .map((product) => {
