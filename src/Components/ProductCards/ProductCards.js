@@ -65,7 +65,6 @@ export default function ProductCards(props) {
 
   const filterProduct = event => {
     const categoryName = event.target.value;
-    
     setCheckedProducts((prev) =>
         checkedProducts.includes(categoryName)
             ? prev.filter((cur) => cur !== categoryName)
@@ -74,6 +73,9 @@ export default function ProductCards(props) {
     //console.log(checkedProducts);
     filterCat()
   }
+  
+
+ 
   
   
 
