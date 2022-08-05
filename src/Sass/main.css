@@ -6704,6 +6704,10 @@ footer {
   margin-right: 5px;
 }
 
+.cart-container {
+  margin: 34px 0px;
+}
+
 .cart-products {
   margin-top: 40px;
 }
