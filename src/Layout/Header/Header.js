@@ -28,11 +28,11 @@ export default function Header(){
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--2 aem-GridColumn--phone--8">
                     <div id="mySidenav" class="sidenav">
                         <span class="closebtn" onClick={closeNav} >&times;</span>
-                        <a href="/capstone/" className="cat-head" aria-label="shop-categories">Shop Categories</a>
-                        <a href="#/category/women's clothing" aria-label="women">Women</a>
-                        <a href="#/category/men's clothing" aria-label="men">Men</a>
-                        <a href="#/category/electronics" aria-label="Electronics">Electronics</a>
-                        <a href="#/category/jewelery" aria-label="Jewellery">Jewellery</a>
+                        <a href="/capstone/" className="cat-head" aria-label="shop-categories"  onClick={closeNav}>Shop Categories</a>
+                        <a href="#/category/women's clothing" aria-label="women"  onClick={closeNav}>Women</a>
+                        <a href="#/category/men's clothing" aria-label="men"  onClick={closeNav}>Men</a>
+                        <a href="#/category/electronics" aria-label="Electronics"  onClick={closeNav}>Electronics</a>
+                        <a href="#/category/jewelery" aria-label="Jewellery"  onClick={closeNav}>Jewellery</a>
 
                         <div className="sidenav-bottom">
                             <a href="/capstone/" aria-label="Account"><img src={user} alt="Search"/>Account</a>

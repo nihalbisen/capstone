@@ -10,15 +10,18 @@ export default function HeroBanner() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
                 <button onClick={() => { navigate("/products/")}} >SHOP NOW</button>
             </div>
+             
+            
             <div className="carousel aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--hide">
+                   
                     {/* <!-- The dots/circles --> */}
                     <div style={{textAlign:`center`}}>
                         <span className="dot" ></span>
                         <span className="dot" ></span>
                         <span className="dot" ></span>
-                    </div>                        
-                                    
+                    </div>                                     
             </div>
+            
             <div className="hero-sec2 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--hide aem-GridColumn--tablet--6">
                 
             </div>

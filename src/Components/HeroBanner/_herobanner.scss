@@ -2,13 +2,11 @@
 
 .hero{
     width: 100%;
-    
-    
 }
 .hero-sec1{
     padding: 40px 100px;
     background: url("../Images/placeholder-blank.svg");
-    height: 450px;
+    height: 450px; 
 }
 .hero-sec2{
     
@@ -70,6 +68,7 @@
     }
 }
 @media screen and (min-width:328px) and (max-width:768px) {
+    
     .hero-sec1 {
         padding: 0 16px;
         padding-top: 288px;
@@ -79,8 +78,6 @@
         background-repeat: no-repeat;
         height: 640px;
         position: relative;
-        
-        
     }
       .hero-sec1 > h2 {
         // typo(font-family, font-size, line-height, text-align, color)

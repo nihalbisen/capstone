@@ -85,10 +85,10 @@ export default function SingleProduct(){
                     <form action="/" target="">
                         <div>
                             <h4 className="attribute">Colors</h4>
-                            <input className="colors colors-gr1" type="checkbox" name="gr1" value="gr1" />
-                            <input className="colors colors-gr2" type="checkbox" name="gr2" value="gr2" />
-                            <input className="colors colors-gr3" type="checkbox" name="gr3" value="gr3" />
-                            <input className="colors colors-gr4" type="checkbox" name="gr4" value="gr4" />
+                            <input className="colors colors-gr1" type="radio" name="colors" value="gr1" />
+                            <input className="colors colors-gr2" type="radio" name="colors" value="gr2" />
+                            <input className="colors colors-gr3" type="radio" name="colors" value="gr3" />
+                            <input className="colors colors-gr4" type="radio" name="colors" value="gr4" />
                         </div>
                         <div className="size-ar">
                             <h4 className="attribute">Size</h4>
