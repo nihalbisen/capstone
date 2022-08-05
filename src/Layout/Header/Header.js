@@ -21,6 +21,10 @@ export default function Header(){
     const closeNav = () =>{
         document.getElementById("mySidenav").style.width = "0";
     }
+
+   
+
+
     return(
         <>
         <ToastContainer/>
@@ -51,11 +55,11 @@ export default function Header(){
             
             <nav role="navigation" aria-label="Main" className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--5 aem-GridColumn--phone--hide">
                 <ul className="menu">
-                    <li><a href="/capstone/" aria-label="Home">Home</a></li>
-                    <li><a href="#/category/women's clothing" aria-label="Women">Women</a></li>
-                    <li><a href="#/category/men's clothing" aria-label="Men">Men</a></li>
-                    <li><a href="#/category/electronics" aria-label="Electronics">Electronics</a></li>
-                    <li><a href="#/category/jewelery" aria-label="Jewellery">Jewellery</a></li> 
+                    <li><a href="/capstone/" aria-label="Home" >Home</a></li>
+                    <li><a href="#/category/women's clothing" aria-label="Women" >Women</a></li>
+                    <li><a href="#/category/men's clothing" aria-label="Men" >Men</a></li>
+                    <li><a href="#/category/electronics" aria-label="Electronics" >Electronics</a></li>
+                    <li><a href="#/category/jewelery" aria-label="Jewellery" >Jewellery</a></li> 
                 </ul>
             </nav>
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--5 aem-GridColumn--phone--4">

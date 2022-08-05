@@ -5183,10 +5183,6 @@ header {
   border-bottom: 4px solid #DFF6FF;
 }
 
-.menu > li > a:active {
-  border-bottom: 4px solid #DFF6FF;
-}
-
 .side-menu {
   display: -webkit-box;
   display: -ms-flexbox;
